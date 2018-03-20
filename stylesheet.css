@@ -212,7 +212,7 @@ body {
   padding: 30px;
 }
 
-.info-item h1{
+.info-item h1 {
   font-size: 72px;
   color: #CCCCCC;
 }
@@ -235,6 +235,11 @@ body {
 
 /* Who We Are Section */
 
+.who-container {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/info-background.jpg') no-repeat center center;
+  min-height: 500px;
+}
+
 .who-container img {
   width: 80%;
   margin: 10px auto;
@@ -243,12 +248,25 @@ body {
 .who-container p {
   font-weight: 250;
   font-size: 16px;
+  color: white;
+}
+
+.who-container h1 {
+  color: white;
+}
+
+.diagonal-line {
+  height: 400px;
+  width: 2px;
+  background-color: white;
+  transform: rotate(20deg);
+  margin: 0 auto;
 }
 
 /* Featured Work Section */
 
 .featured-work {
-  background-color: #E6E6E6;
+  background-color: white;
 }
 
 .featured-text {
@@ -272,24 +290,32 @@ body {
 .featured-card {
   margin: 20px;
   width: 300px;
+  position: relative;
+  border: 8px solid white;
 }
 
-.featured-card-text {
+/*.featured-card-text {
   border-bottom: 1px solid #CCCCCC;
   border-right: 1px solid #CCCCCC;
   border-left: 1px solid #CCCCCC;
   background-color: white;
   margin-top: -10px;
   padding: 8px;
-}
+}*/
 
 .featured-card:hover {
   cursor: pointer;
+  border: 8px solid #34C249;
 }
 
 .featured-card h6 {
-  font-size: 18px;
+  font-size: 32px;
   font-weight: bold;
+  color: white;
+  text-shadow: 3px 3px 0px black;
+  position: absolute;
+  top: 32%;
+  left: 18%;
 }
 
 .featured-card p {
@@ -299,9 +325,14 @@ body {
 }
 
 .featured-logo {
-  width: 300px;
+  filter: brightness(85%);
+  width: 284px;
   height: 200px;
-  border: 1px solid #CCCCCC;
+}
+
+#gravity-brands {
+  top: 28% !important;
+  left: 28% !important;
 }
 
 /* Footer Section */
