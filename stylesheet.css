@@ -202,7 +202,7 @@ body {
 }
 
 .info-title {
-  color: #333333;
+  color: black;
   font-size: 18px;
   font-weight: 300;
 }
@@ -228,7 +228,7 @@ body {
 }
 
 .line {
-  border-bottom: 3px solid #6B6B6B;
+  border-bottom: 3px solid #34C249;
   margin: 0 auto;
   width: 92vw;
 }
@@ -270,15 +270,25 @@ body {
 }
 
 .featured-text {
-  align-items: center;
   text-align: center;
-  padding-top: 1px;
-  margin: 0 auto;
-  margin-bottom: 50px;
+  padding-bottom: 16px;
+  margin: 20px auto;
+  margin-bottom: 20px;
+  border: 6px solid black;
+  width: 300px;
 }
 
 .featured-text h1 {
-  font-size: 30px;
+  font-size: 44px;
+  font-weight: 500;
+  color: black;
+}
+
+.line2 {
+  width: 250px;
+  height: 6px;
+  background-color: #34C249;
+  margin: 0 auto;
 }
 
 .featured-box {
@@ -291,7 +301,7 @@ body {
   margin: 20px;
   width: 300px;
   position: relative;
-  border: 8px solid white;
+  border: 6px solid black;
 }
 
 /*.featured-card-text {
@@ -305,17 +315,18 @@ body {
 
 .featured-card:hover {
   cursor: pointer;
-  border: 8px solid #34C249;
+  border: 6px solid #34C249;
 }
 
 .featured-card h6 {
   font-size: 32px;
   font-weight: bold;
   color: white;
-  text-shadow: 3px 3px 0px black;
+  background-color: black;
+  padding: 2px 6px;
   position: absolute;
   top: 32%;
-  left: 18%;
+  left: 15%;
 }
 
 .featured-card p {
@@ -325,14 +336,14 @@ body {
 }
 
 .featured-logo {
-  filter: brightness(85%);
-  width: 284px;
+  filter: brightness(70%) saturate(70%);
+  width: 288px;
   height: 200px;
 }
 
 #gravity-brands {
   top: 28% !important;
-  left: 28% !important;
+  left: 24% !important;
 }
 
 /* Footer Section */
@@ -344,7 +355,7 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: -70px;
-  background-color: #333333;
+  background-color: black;
 }
 
 .footer p {
@@ -363,6 +374,14 @@ body {
 }
 
 /* Media Queries */
+@media screen and (min-width: 2000px) {
+  .featured-box {
+    justify-content: center;
+  } .featured-card {
+    margin: 20px 80px;
+  }
+}
+
 @media screen and (max-width: 768px) {
     .content {
         top: 60px;
