@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Meta Data -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Charlie Merrill">
+  <title>Magic Star</title>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="96x96" href="#">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <div class="navbar navbar-fixed-top">
+    <!-- Logo -->
+    <a href="#" class="navbar-brand">
+      <img class="logo" src="images/enthusiast.png" alt="Enthusiast Logo">
+    </a>
+
+    <!-- Right Navigation -->
+    <div class="navbar-right hidden-xs hidden-sm">
+      <a href="#about" class="navbar-item navbar-link">ABOUT US</a>
+      <a href="#work" class="navbar-item navbar-link">OUR WORK</a>
+    </div>
+
+    <!-- Dropdown appearing on mobile only -->
+    <div class="navbar-item hidden-md hidden-lg hidden-xl">
+      <div class="dropdown">
+        <p class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars" aria-hidden="true"></i></p>
+        <ul class="dropdown-menu dropdown-menu-right navbar-dropdown-menu">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#work">Our Work</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video -->
+  <div class="jumbotron">
+    <video autoplay muted loop id="myVideo">
+      <source src="images/background.mp4" type="video/mp4">
+    </video>
+
+    <div class="content">
+      <h1>Magic Star</h1>
+      <p class="hidden-xs hidden-sm">Lorem ipsum dolor sit amet.</p>
+      <p class="hidden-xs hidden-sm">Saperet epicuri fabellas no eam.</p>
+      <div class="jumbotron-buttons hidden-xs hidden-sm">
+        <div id="learn-more">
+          <a href="#about"><h6>ABOUT</h6></a>
+        </div>
+        <div id="chat">
+          <a href="#work"><h6>OUR WORK</h6></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile-button-box hidden-md hidden-lg hidden-xl">
+    <div>
+      <div class="mobile-button" id="learn-more">
+        <h6>ABOUT</h6>
+      </div>
+      <div class="mobile-button" id="chat">
+        <h6>OUR WORK</h6>
+      </div>
+    </div>
+  </div>
+
+  <!-- Info Panel -->
+  <div class="container-fluid info-panel">
+    <div class="col-xs-12 col-sm-3 info-item">
+      <h1><i class="far fa-lightbulb"></i></h1>
+      <h4 class="info-title">Innovative</h4>
+    </div>
+    <div class="col-xs-12 col-sm-3 info-item">
+      <h1><i class="fas fa-bolt"></i></h1>
+      <h4 class="info-title">Fast</h4>
+    </div>
+    <div class="col-xs-12 col-sm-3 info-item">
+      <h1><i class="fas fa-chart-pie"></i></h1>
+      <h4 class="info-title">Precise</h4>
+    </div>
+    <div class="col-xs-12 col-sm-3 info-item">
+      <h1><i class="far fa-check-circle"></i></h1>
+      <h4 class="info-title">Success</h4>
+    </div>
+  </div>
+  <div class="line"></div>
+
+  <!-- Who We Are Section -->
+  <div class="container who-container" id="about">
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-xs-12 hidden-sm hidden-md hidden-lg hidden-xl flex-center">
+        <img src="images/cross-campus.jpg" alt="Cross Campus">
+      </div>
+      <div class="col-xs-12 col-sm-7">
+        <h1>Who We Are</h1>
+        <p>Lorem ipsum dolor sit amet, clita volumus ei cum. Saperet epicuri fabellas no eam. Delenit vivendo sed ut, te ius primis audire, pri suas iudico splendide in. Mundi possim posidonium pri ei. Meis doming vix an, mnesarchum complectitur in his. Eu eros tation decore qui, at eum mundi inimicus.</p>
+      </div>
+      <div class="col-sm-4 col-sm-offset-1 hidden-xs flex-center">
+        <img src="images/cross-campus.jpg" alt="Cross Campus">
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 flex-center">
+        <img src="images/cross-campus.jpg" alt="Cross Campus">
+      </div>
+      <div class="col-xs-12 col-sm-7">
+        <h1 class="text-right">What We Do</h1>
+        <p>Lorem ipsum dolor sit amet, clita volumus ei cum. Saperet epicuri fabellas no eam. Delenit vivendo sed ut, te ius primis audire, pri suas iudico splendide in. Mundi possim posidonium pri ei. Meis doming vix an, mnesarchum complectitur in his. Eu eros tation decore qui, at eum mundi inimicus.</p>
+      </div>
+    </div>
+    <br>
+  </div>
+
+  <!-- Partner Section -->
+  <div class="featured-work" id="work">
+    <div class="featured-text">
+      <h1>OUR WORK</h1>
+    </div>
+    <div class="featured-box">
+      <div class="featured-card">
+        <img class="featured-logo" src="images/clicktool.png" alt="Nexen Tire">
+        <div class="featured-card-text">
+          <h6>CLICKTOOL</h6>
+          <p>A blockchain service.</p>
+        </div>
+      </div>
+      <div class="featured-card">
+        <img class="featured-logo" src="logos/rotary.jpg" alt="Rotary Club of LA">
+        <div class="featured-card-text">
+          <h6>COINPAPER</h6>
+          <p>Another one of our products.</p>
+        </div>
+      </div>
+      <div class="featured-card">
+        <img class="featured-logo" src="images/gravity-brands.png" alt="L&E Research">
+        <div class="featured-card-text">
+          <h6>GRAVITY BRANDS</h6>
+          <p>A company we helped market.</p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+  </div>
+
+  <div class="footer">
+    <div>
+      <h5>Copyright 2018, Magic Star. All rights reserved.</h5>
+      <h5>contact@magicstar.io</h5>
+    </div>
+    <div class="flex-center">
+      <p><i class="fab fa-facebook-square"></i></p>
+      <p><i class="fab fa-twitter-square"></i></p>
+      <p><i class="fab fa-linkedin"></i></p>
+    </div>
+
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+</body>
+</html>
